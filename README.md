@@ -20,9 +20,11 @@ The `Server Selection` parameter refers to an option given by parsec once it's l
   
 ![Servers Menu](https://i.imgur.com/zUGpOzO.png)
 
-## Second Run
+## Second Run  
 From the second run onwards it is only important to have a `Server ID` saved, since thats the only parameter the addon will be using.
 Your server ID can be obtained via the parsec app or web on the **Manage** section  
+  
 ![Manage Button](https://i.imgur.com/oIRQITd.png) -> 
 ![Server ID](https://i.imgur.com/7vTMRON.png)  
+  
 Once you get that number on the settings menu, you're all set!
