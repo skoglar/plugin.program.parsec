@@ -18,18 +18,18 @@ credentials = [ ADDON.getSetting('email'),
                 "y",
                 ADDON.getSetting('server_selection') ]
 def check_permisions(root_path):
-	res_path = os.path.join(root_path, "resources")
-	elevate_perms = os.stat(res_path+"/elevate.sh")
-	runparsec_perms = os.stat(res_path+"/run_parsec.sh")
+    res_path = os.path.join(root_path, "resources")
+    elevate_perms = os.stat(res_path+"/elevate.sh")
+    runparsec_perms = os.stat(res_path+"/run_parsec.sh")
     firstrun_perms = os.stat(res_path+"/first_run.sh")
 
-	os.chmod(res_path+"/elevate.sh", elevate_perms.st_mode | stat.S_IEXEC)
-	os.chmod(res_path+"/run_parsec.sh", runparsec_perms.st_mode | stat.S_IEXEC)
+    os.chmod(res_path+"/elevate.sh", elevate_perms.st_mode | stat.S_IEXEC)
+    os.chmod(res_path+"/run_parsec.sh", runparsec_perms.st_mode | stat.S_IEXEC)
     os.chmod(res_path+"/first_run.sh", runparsec_perms.st_mode | stat.S_IEXEC)
 
-	data_path = os.path.join(res_path, "data")
-	parsec_perms = os.stat(data_path+"/parsec")
-	os.chmod(data_path+"/parsec", parsec_perms.st_mode | stat.S_IEXEC)
+    data_path = os.path.join(res_path, "data")
+    parsec_perms = os.stat(data_path+"/parsec")
+    os.chmod(data_path+"/parsec", parsec_perms.st_mode | stat.S_IEXEC)
 
 def credentials_set(root_path):
     data_path = os.path.join(root_path, "resources", "data")
