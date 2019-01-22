@@ -14,8 +14,9 @@ Then install it as any other zipped add-on and go to the addon settings
   
 When running for the first time it is absolutely necessary to set both `Email` and `Password` before running the addon.  
 After that you'll need to know your `Server ID` and put it on the settings.  .  
-The `Server Selection` parameter refers to an option given by parsec once it's logged into your account, which corresponds to a number on a list of servers  
-**This will only be used on first login**  
+The `Server Selection` parameter refers to an option given by parsec once it's logged into your account, which corresponds to a number on a list of servers.  
+
+**This will only be used on the first login and can be ignored unless you need to connect to a specific server on the list**  
   
 ![Servers Menu](https://i.imgur.com/zUGpOzO.png)
 
