@@ -14,13 +14,13 @@ Then install it as any other zipped add-on and go to the addon settings
   
 When running for the first time it is absolutely necessary to set both `Email` and `Password` before running the addon.  
 After that you'll need to know your `Server ID` and put it on the settings.  .  
-The `Server Selection` parameter refers to an options given by parsec once it's logged into your account
+The `Server Selection` parameter refers to an option given by parsec once it's logged into your account, which corresponds to a number on a list of servers  
 **This will only be used on first login**  
   
 ![Servers Menu](https://i.imgur.com/zUGpOzO.png)
 
 ## Second Run
-From second run onwards it is only important to have a `Server ID` saved, since thats the only parameter the addon will be using.
+From the second run onwards it is only important to have a `Server ID` saved, since thats the only parameter the addon will be using.
 Your server ID can be obtained via the parsec app or web on the **Manage** section  
 ![Manage Button](https://i.imgur.com/oIRQITd.png) -> 
 ![Server ID](https://i.imgur.com/7vTMRON.png)  
