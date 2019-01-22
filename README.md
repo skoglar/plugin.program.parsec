@@ -7,8 +7,8 @@ It uses the [raspbian version](https://s3.amazonaws.com/parsec-build/package/par
 
 ## Installation and Usage
 Download the latest [release](https://github.com/skoglar/plugin.program.parsec/releases/download/v1.0.0/plugin.program.parsec.zip) on libreelec using wget, or any other method you like  
-```wget https://github.com/skoglar/plugin.program.parsec/releases/download/v1.0.0/plugin.program.parsec.zip```
-Then install it as any other zipped add-on and go to the addons setting
+```wget https://github.com/skoglar/plugin.program.parsec/releases/download/v1.0.0/plugin.program.parsec.zip```  
+Then install it as any other zipped add-on and go to the addon settings
 ## First run
 ![Parsec Settings](https://i.imgur.com/6FIpWPA.png)  
   
