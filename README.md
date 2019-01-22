@@ -5,6 +5,9 @@ Although it should be easily modifiable for other linux distributions.
 
 It uses the [raspbian version](https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb) of parsec provided by the [Parsec Team](https://parsecgaming.com/downloads)  
 
+## Preparation
+If you have previously run Parsec on your Pi, you can either skip the **first run** step or do `rm -rvf /storage/.parsec/` and start clean.
+
 ## Installation and Usage
 Download the latest [release](https://github.com/skoglar/plugin.program.parsec/releases/download/v1.0.0/plugin.program.parsec.zip) on libreelec using wget, or any other method you like  
 ```wget https://github.com/skoglar/plugin.program.parsec/releases/download/v1.0.0/plugin.program.parsec.zip```  
