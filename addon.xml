@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.parsec" name="Parsec Launcher" version="0.9" provider-name="skoglar">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>game video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Launch Parsec</summary>
+        <description lang="en_GB"></description>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <forum></forum>
+        <website></website>
+        <email></email>
+        <source>https://github.com/skoglar/plugin.program.parsec-launcher</source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
