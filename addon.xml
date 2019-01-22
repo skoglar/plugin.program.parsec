@@ -6,7 +6,7 @@
     </requires>
 
     <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>game video</provides>
+        <provides>game executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Launch Parsec</summary>
