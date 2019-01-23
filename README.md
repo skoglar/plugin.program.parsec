@@ -1,4 +1,4 @@
-# Parsec Launcher for LibreELEC
+# Parsec Launcher for LibreELEC (Kodi 18)
 
 This is a small add-on for launching Parsec on Libreelec  
 Although it should be easily modifiable for other linux distributions.    
