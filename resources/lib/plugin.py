@@ -12,10 +12,13 @@ logger = logging.getLogger(ADDON.getAddonInfo('id'))
 kodilogging.config()
 
 #Get the server id from the settings
+server_selection = ADDON.getSetting('server_selection')
 credentials = [ ADDON.getSetting('email'),
                 ADDON.getSetting('password'),
                 "y",
-                ADDON.getSetting('server_selection') ]
+                server_selection ]
+settings = [ "y",
+              server_selection ]
 def check_permisions(root_path):
     res_path = os.path.join(root_path, "resources")
     elevate_perms = os.stat(res_path+"/elevate.sh")
@@ -45,10 +48,20 @@ def credentials_set(root_path):
         creds_file.close()
         return False
 
+def save_settings(root_path):
+    data_path = os.path.join(root_path, "resources", "data")
+    settings_file = open(data_path+"/settings")
+    for option in settings:
+        if option.isdigit():
+            settings_file.write(option)
+        else:
+            settings_file.write(option+'\n')
+
+
 #Launch parsec through a script
 def launch_parsec(root_path):
-    if server_id == "0": 
-        xbmcgui.Dialog().ok("Parsec", "You need to set a server ID first!")
+    if server_selection == "0": 
+        xbmcgui.Dialog().ok("Parsec", "You need to set a server first!")
     else:
     	#Set paths:
     	#Resource path
@@ -57,10 +70,12 @@ def launch_parsec(root_path):
         parsec_path = os.path.join(root_path, "resources", "data", "parsec")
         #Data path
         data_path = os.path.join(root_path, "resources", "data")
+        #Settings Path
+        settings_path = os.path.join(root_path, "resources, data", "settings")
         #Script with arguments
         script_call = res_path+"/elevate.sh"+" "\
         			  	+parsec_path+" "\
-        			  	+server_id
+        			  	+settings_path
         script_first_call = res_path+"/elevate.sh"+" "\
                         +data_path
         #Launch!
@@ -68,9 +83,9 @@ def launch_parsec(root_path):
         if credentials_set(root_path):
             creds_file = open(data_path+"/creds","w+")
             creds_file.write('nothing to see here')
-            opts_file = open(data_path+"/user_settings" "w+")
+            opts_file = open(data_path+"/user_settings" "a+")
             opts_file.write('y')
-            opts_file.write('1')
+            opts_file.write()
             xbmcgui.Dialog().ok("Parsec", "All set, launching!")
             os.system("sh "+script_call)
         else:
