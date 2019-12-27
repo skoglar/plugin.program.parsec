@@ -83,6 +83,7 @@ def launch_parsec(root_path):
         if credentials_set(root_path):
             creds_file = open(data_path+"/creds","w+")
             creds_file.write('nothing to see here')
+            save_settings()
             xbmcgui.Dialog().ok("Parsec", "All set, launching!")
             os.system("sh "+script_call)
         else:
