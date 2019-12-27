@@ -12,7 +12,6 @@ logger = logging.getLogger(ADDON.getAddonInfo('id'))
 kodilogging.config()
 
 #Get the server id from the settings
-server_id = ADDON.getSetting('server_id')
 credentials = [ ADDON.getSetting('email'),
                 ADDON.getSetting('password'),
                 "y",
@@ -69,6 +68,9 @@ def launch_parsec(root_path):
         if credentials_set(root_path):
             creds_file = open(data_path+"/creds","w+")
             creds_file.write('nothing to see here')
+            opts_file = open(data_path+"/user_settings" "w+")
+            opts_file.write('y')
+            opts_file.write('1')
             xbmcgui.Dialog().ok("Parsec", "All set, launching!")
             os.system("sh "+script_call)
         else:

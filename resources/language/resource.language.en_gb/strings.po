@@ -26,10 +26,6 @@ msgctxt "#32001"
 msgid "Debug"
 msgstr ""
 
-msgctxt "#32013"
-msgid "Server ID"
-msgstr ""
-
 msgctxt "#32014"
 msgid "Email"
 msgstr ""
