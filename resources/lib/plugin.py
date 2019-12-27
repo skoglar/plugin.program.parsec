@@ -68,7 +68,7 @@ def launch_parsec(root_path):
         #Data path
         data_path = os.path.join(root_path, "resources", "data")
         #Settings Path
-        settings_path = os.path.join(root_path, "resources, data", "settings")
+        settings_path = os.path.join(root_path, "resources", "data", "settings")
         #Script with arguments
         script_call = res_path+"/elevate.sh"+" "\
         			  	+parsec_path+" "\
