@@ -52,9 +52,6 @@ def save_settings(root_path):
     data_path = os.path.join(root_path, "resources", "data")
     settings_file = open(data_path+"/settings", "w+")
     for option in settings:
-        if option.isdigit():
-            settings_file.write(option)
-        else:
             settings_file.write(option+'\n')
 
 
