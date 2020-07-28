@@ -1,3 +1,7 @@
+# Current Status
+
+This package is **no longer mantained**, as the [latest](https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb) parsec build no longer works on Libreelec
+
 # Parsec Launcher for LibreELEC-rpi (Kodi 18)
 
 This is a small add-on for launching Parsec on Libreelec-rpi  
